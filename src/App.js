@@ -1,26 +1,26 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import PokemonCard from "./components/PokemonCard";
 import Nav from "./components/Nav";
 import Wrapper from "./components/Wrapper";
 // import Title from "./components/Title";
 import Container from "./Container";
 import Row from "./Row";
 import Column from "./Column";
-import friends from "./friends.json";
+import pokemon from "./pokemon.json";
 import "./App.css";
 
-function shuffleFriends(array) {
-  for (let i = array.length - 1; i > 0; i--) {
+function shufflePokemon(a) {
+  for (let i = a.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  return array;
+  return a;
 };
 
 class App extends Component {
   // Set this.state
   state = {
-    friends,
+    pokemon,
     currentScore: 0,
     topScore: 0,
     rightWrong: "",
@@ -62,8 +62,8 @@ class App extends Component {
   };
 
   handleShuffle = () => {
-    let shuffledFriends = shuffleFriends(friends);
-    this.setState({ friends: shuffledFriends });
+    let shuffledPokemon = shufflePokemon(pokemon);
+    this.setState({ pokemon: shuffledPokemon });
   };
 
   render() {
@@ -82,9 +82,9 @@ class App extends Component {
 
         <Container>
           <Row>
-            {this.state.friends.map(friend => (
+            {this.state.pokemon.map(friend => (
               <Column size="md-3 sm-6">
-                <FriendCard
+                <PokemonCard
                   key={friend.id}
                   handleClick={this.handleClick}
                   handleIncrement={this.handleIncrement}
