@@ -1,3 +1,6 @@
+https://protected-plateau-36560.herokuapp.com/
+Check out this Pokemon Click Game.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
