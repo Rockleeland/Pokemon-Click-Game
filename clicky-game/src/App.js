@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Nav from "./components/Nav";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+// import Title from "./components/Title";
 import Container from "./Container";
 import Row from "./Row";
 import Column from "./Column";
@@ -45,7 +45,7 @@ class App extends Component {
     if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
     }
-    else if (newScore === 12) {
+    else if (newScore == 12) {
       this.setState({ rightWrong: "You win!" });
     }
     this.handleShuffle();
@@ -55,7 +55,7 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       topScore: this.state.topScore,
-      rightWrong: "Glaven!",
+      rightWrong: "Fainted!",
       clicked: []
     });
     this.handleShuffle();
@@ -70,16 +70,15 @@ class App extends Component {
     return (
       <Wrapper>
         <Nav
-          title="Simpsons Clicky Game"
+          title="Pokemon - Gotta Catch em All!"
           score={this.state.currentScore}
           topScore={this.state.topScore}
           rightWrong={this.state.rightWrong}
         />
 
-        <Title>
-          Try to click on each character, but don't hit any duplicates, or
-          we'll release the hounds!!!
-        </Title>
+        {/* <Title>
+          Click on each Pokemon without hitting any duplicates or you lose!
+        </Title> */}
 
         <Container>
           <Row>
