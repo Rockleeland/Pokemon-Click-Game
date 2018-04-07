@@ -6,7 +6,9 @@ const Nav = props => (
     <ul>
       <li id="rw">{props.rightWrong}</li>
       <li className="brand animated lightSpeedIn">
-        <a href="/clicky-game/"><img className="pokemon-logo" alt={props.name} src={"https://img00.deviantart.net/9aa7/i/2015/126/3/7/pokemon_logo_metallic_by_niru_kun-d8sezg4.png"} /></a>
+        <a href="/clicky-game/">
+        <img className="pokemon-logo" alt={props.name} src={"https://i.ytimg.com/vi/Z8k0oLlmxBc/maxresdefault.jpg"} />
+        </a>
       </li>
       <li className="scoreboard">
         <div className="team gsw win">
