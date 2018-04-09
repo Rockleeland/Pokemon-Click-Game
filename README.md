@@ -1,9 +1,9 @@
-#Pokemon Click Game!
+# Pokemon Click Game!
 
 <img align="center" width="650" height="450"
-     title="pokemon logo" src="./pokemonreadmelogo.svg">
+     title="pokemon logo" src="./Pokemonreadmelogo.svg">
 
-##Click [here](https://protected-plateau-36560.herokuapp.com/) to play!
+## Click [here](https://protected-plateau-36560.herokuapp.com/) to play!
 
 
 
